@@ -102,23 +102,35 @@
 //     }
 // }
 
-function constructMobilePhone(mobileName, mobileColor, mobileModel, mobileFeatures, mobileApps, mobilePrice, mobileCamera, mobileVaranty) {
-    let mobile = {
-        name: mobileName,
-        color: mobileColor,
-        model: mobileModel,
-        features: mobileFeatures,
-        apps: mobileApps,
-        price: mobilePrice,
-        camera: mobileCamera,
-        varanty: mobileVaranty,
-        greet: function(){
-            console.log(`${this.name} is a mobile.Its color is ${this.color}.${this.name}'s model is ${this.model}.`);
-        }
+// function constructMobilePhone(mobileName, mobileColor, mobileModel, mobileFeatures, mobileApps, mobilePrice, mobileCamera, mobileVaranty) {
+//     let mobile = {
+//         name: mobileName,
+//         color: mobileColor,
+//         model: mobileModel,
+//         features: mobileFeatures,
+//         apps: mobileApps,
+//         price: mobilePrice,
+//         camera: mobileCamera,
+//         varanty: mobileVaranty,
+//         greet: function(){
+//             console.log(`${this.name} is a mobile.Its color is ${this.color}.${this.name}'s model is ${this.model}.`);
+//         }
         
-        }
-        return mobile;
+//         }
+//         return mobile;
+// }
+
+// ------Shortcuts------
+
+function MobilePhone(mobileName, mobileColor, mobileModel, mobileFeatures, mobileApps, mobilePrice){
+    this.name = mobileName;
+    this.color = mobileColor;
+    this.model = mobileModel;
+    this.features = mobileFeatures;
+    this.apps = mobileApps;
+    this.price = mobilePrice;
 }
 
-
-
+MobilePhone.prototype.greet = function(){
+            console.log(`${this.name} is a mobile.Its color is ${this.color}.${this.name}'s model is ${this.model}.`);
+        }
