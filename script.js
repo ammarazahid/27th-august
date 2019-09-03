@@ -120,6 +120,21 @@
 //         return mobile;
 // }
 
+
+// function constructToy(toyName, toyColor, toyFeatures, toyPrice, madeBy){
+//     let obj = {
+//         name: toyName,
+//         color: toyColor,
+//         features: toyFeatures,
+//         price: toyPrice,
+//         madeIn: madeBy,
+//         greet: function(){
+//             console.log(`I am a ${this.toyName}.My color is ${this.toyColor}.I can ${this.toyFeatures[0]} and ${this.toyFeatures[1]} .`)
+//         } ,
+//     }
+//     return obj;
+// }
+
 // ------Shortcuts------
 
 function MobilePhone(mobileName, mobileColor, mobileModel, mobileFeatures, mobileApps, mobilePrice){
